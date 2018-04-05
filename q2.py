@@ -1,5 +1,9 @@
+# I don't feel great about this.
+# 
+
 def camel_to_sentence(camel):
   # no regex
+  # thought about doing ascii comparison but i think this is quicker...
   uppers = ['A', 'B', 'C', ..., 'Z']
 
   # get indexes of all uppercase letters
