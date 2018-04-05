@@ -2,12 +2,12 @@
 from pool import db
 
 class User(object):
-  def __init__(self, id, username, email):
+  def __init__(self, _id, _username, _email):
     super(User, self).__init__()
 
-    self.id = None
-    self.username = None
-    self.email = None
+    self.id = _id
+    self.username = _username
+    self.email = _email
   
   def get_by_user_ids(self, ids):
 
@@ -21,4 +21,3 @@ class User(object):
         users.append(User(user.id, user.username, user.email))
 
       return users
-      
